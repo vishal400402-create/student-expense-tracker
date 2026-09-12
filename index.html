@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Student Expense Tracker</h1>
+            <p>Track and manage your daily expenses</p>
+        </header>
+
+
+        <!-- Add Expense Card -->
+        <section class="card">
+
+            <h2>Add Expense</h2>
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="Expense name"
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount"
+                >
+
+                <select id="category">
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="expenseDate"
+                >
+
+            </div>
+
+            <button id="addButton" class="primary-btn">
+                Add Expense
+            </button>
+
+        </section>
+
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <div class="stat-card">
+                <p>Total Expense</p>
+                <h2>₹<span id="total">0</span></h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Transactions</p>
+                <h2><span id="expenseCount">0</span></h2>
+            </div>
+
+        </section>
+
+
+        <!-- Expenses -->
+        <section class="card">
+
+            <div class="expense-header">
+
+                <h2>Your Expenses</h2>
+
+            </div>
+
+
+            <!-- Search -->
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search expense..."
+            >
+
+
+            <!-- Filter -->
+            <select id="filterCategory">
+
+                <option value="All">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+
+            <!-- Expense List -->
+            <ul id="expenseList"></ul>
+
+
+            <!-- Clear -->
+            <button id="clearButton" class="clear-btn">
+                Clear All Expenses
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
