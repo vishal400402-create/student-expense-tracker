@@ -1,5 +1,7 @@
 # 💰 Student Expense Tracker
 
+![Student Expense Tracker Screenshot](screenshot.png)
+
 A simple and responsive web application to track daily expenses.
 
 ## 🚀 Live Demo
